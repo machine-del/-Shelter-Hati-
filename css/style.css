@@ -825,228 +825,173 @@ footer {
     margin-right: 40px;
 }
 
-.iconCard {
+.findme>h2 {
+    margin: 60px 0px 0px 40px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.dog-dasha {
     display: flex;
-    margin-left: 3%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/image\ 8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.tabButton {
-    cursor: pointer;
-    border: 3px solid transparent;
-    text-decoration: none;
-    display: inline-block;
-    width: 140px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 45px;
-    margin: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #524f4e;
-    background: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
-    transition: .3s;
-}
-
-.tabButton:hover {
-    background: #2EE59D;
-    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
-    color: white;
-    transform: translateY(-7px);
-}
-
-.stripe {
+.dog-belka {
     display: flex;
-    margin-left: 3%;
-    background-color: black;
-    width: 93%;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/image\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dog-beatris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/image\ 8\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat-gifko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cat1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat-nessi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cat-nessi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat-pampsuha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cat-pampusha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat-piratik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/image\ 8Пиратик.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .cards {
-    display: none;
-    /* Автоматически заполняем на всю ширину grid-контейнера */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    width: 100%;
-    max-width: 1400px;
-    /* Ширина grid-контейнера */
-    justify-content: center;
-    justify-items: center;
-    /* Размещаем карточку по центру */
-    column-gap: 120px;
-    /* Отступ между колонками */
-    row-gap: 70px;
-    /* Отступ между рядами */
-    margin: 0 auto;
-}
-
-.tabs-active {
-    display: grid;
-}
-
-.tabs__btn-active {
-    border-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 94px;
+    padding: 0px 40px 0px 40px;
 }
 
 .card {
-    width: 100%;
-    max-width: 350px;
-    min-height: 350px;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 30px 90px -10px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
-    /* Размещаем элементы в колонку */
-    border-radius: 10px;
-    transition: 0.2s;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 50px;
-    height: 510px;
+    justify-content: space-between;
+    align-items: center;
+    width: 353px;
+    height: 482px;
+    transition: 0.5s ease-in-out;
 }
 
-/* При наведении на карточку - меняем цвет тени */
+.card-hidden {
+    display: none;
+}
+
+.card__desc {
+    background-color: #FFB10B;
+    width: 275px;
+    height: 220px;
+    font-weight: 500;
+    color: white;
+    border-radius: 25px;
+    padding: 30px 19px;
+    transform: translateY(70%);
+}
+
+.card__desc>h2 {
+    font-size: 20px;
+}
+
+.card__desc>p {
+    font-size: 16px;
+    margin: 13px 0px 14px 0px;
+}
+
+.card__desc>a {
+    color: #B27900;
+}
+
 .card:hover {
-    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
-    box-shadow: 0 40px 100px -10px rgba(255, 102, 51, 0.5);
-}
-
-.card__top {
-    flex: 0 0 300px;
-    /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
-    position: relative;
-    overflow: hidden;
-    /* Скрываем, что выходит за пределы */
-}
-
-/* Контейнер для картинки */
-.card__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.card__image>img {
-    width: 100%;
-    height: 120%;
-    object-fit: cover;
-    /* Встраиваем картинку в контейнер card__image */
-    transition: 0.2s;
-}
-
-/* При наведении - увеличиваем картинку */
-.card__image:hover>img {
     transform: scale(1.1);
 }
 
-/* Размещаем скидку на товар относительно изображения */
-.card__label {
-    padding: 4px 8px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: #ff6633;
-    border-radius: 4px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #fff;
-}
-
-.card__bottom {
+.btn {
     display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-    /* Занимаем всю оставшуюся высоту карточки */
-    padding: 10px;
-}
-
-.card__prices {
-    display: flex;
-    margin-bottom: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.card__price::after {
-    content: "₽";
-    margin-left: 4px;
-    position: relative;
-}
-
-.card__price--discount {
-    font-weight: 700;
-    font-size: 19px;
-    color: #414141;
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
-
-.card__price--discount::before {
-    content: "Со скидкой";
-    font-weight: 400;
-    font-size: 13px;
-    color: #bfbfbf;
-}
-
-.card__price--common {
-    font-weight: 400;
-    font-size: 17px;
-    color: #606060;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-}
-
-.card__price--common::before {
-    content: "Обычная";
-    font-weight: 400;
-    font-size: 13px;
-    color: #bfbfbf;
-}
-
-.card__price--discount::before,
-.card__price--common::before {
-    width: 70px;
-}
-
-.card__title {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 150%;
-    color: #414141;
-}
-
-.card__title:hover {
-    color: #ff6633;
-}
-
-.card__add {
-    display: flex;
-    align-items: end;
-    width: 100%;
-    font-weight: 400;
-    font-size: 17px;
-    color: #70c05b;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #70c05b;
-    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
     cursor: pointer;
-    /* Меняем курсор при наведении */
-    transition: 0.2s;
-    margin-top: auto;
-    /* Прижимаем кнопку к низу карточки */
 }
 
-.card__add:hover {
-    border: 1px solid #ff6633;
-    background-color: #ff6633;
-    color: #fff;
+.btn-left {
+    margin-right: 20px;
+    width: 131px;
+    height: 55px;
+    background-color: #FFB820;
+    border-radius: 100px;
+    background-image: url(../img/Arrow\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(3px 4px 13px #AD7600);
+}
+
+.btn-right {
+    margin-left: 20px;
+    width: 131px;
+    height: 55px;
+    background-color: #FFB820;
+    border-radius: 100px;
+    background-image: url(../img/Arrow\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(3px 4px 13px #AD7600);
+}
+
+.btn-right:hover,
+.btn-left:hover {
+    background-color: #FAC451;
+    filter: none;
 }
