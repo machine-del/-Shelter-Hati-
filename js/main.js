@@ -32,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function navMain() {
-  alert("Временно недоступно!");
+  alert("Временно недоступно!\n Доступно: Документы, Розыск");
 }
